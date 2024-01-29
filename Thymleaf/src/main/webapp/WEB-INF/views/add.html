@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/hello/add" th:object="${student}">
+    <input type="text" th:field="*{id}" placeholder="Enter Id">
+    <br>
+    <input type="text" th:field="*{name}" placeholder="Enter Name">
+    <br>
+    <input type="text" th:field="*{age}" placeholder="Enter Age">
+    <button>Add</button>
+</form>
+</body>
+</html>
